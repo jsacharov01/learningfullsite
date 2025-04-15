@@ -10,6 +10,6 @@ export default defineConfig({
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
-    allowedHosts: ['61d4-46-167-214-44.ngrok-free.app'],
+    allowedHosts: ['17d2-46-167-214-44.ngrok-free.app'],
   },
 })
