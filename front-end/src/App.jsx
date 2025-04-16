@@ -4,8 +4,11 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ArticlesListPage from "./pages/ArticlesListPage";
 import ArticlePage from "./pages/ArticlePage";
+import { loader as articleLoader } from "./DataLoaders";
 import Layout from "./Layout";
 import NotFoundPage from "./pages/NotFoundPage";
+import LogingPage from "./pages/LogingPage";
+import CreateAccountPage from "./pages/CreateAccountPage";
 
 const routes = [
   {
@@ -28,6 +31,15 @@ const routes = [
       {
         path: "/articles/:name",
         element: <ArticlePage />,
+        loader: articleLoader,
+      },
+      {
+        path: "/login",
+        element: <LogingPage />,
+      },
+      {
+        path: "/create-account",
+        element: <CreateAccountPage />,
       },
     ],
   },
